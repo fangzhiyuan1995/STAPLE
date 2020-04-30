@@ -1007,7 +1007,7 @@ void STAPLE_TRACKER::getColourMap(const cv::Mat &patch, cv::Mat& output)
                 // xxx
                 *pDst = profg / (profg + probg);
 
-                isnan(*pDst) && (*pDst = 0.0);
+                std::isnan(*pDst) && (*pDst = 0.0);
 
                 pSrc += d;
                 ++pDst;
@@ -1037,7 +1037,7 @@ void STAPLE_TRACKER::getColourMap(const cv::Mat &patch, cv::Mat& output)
                 // xxx
                 *pDst = profg / (profg + probg);
 
-                isnan(*pDst) && (*pDst = 0.0);
+                std::isnan(*pDst) && (*pDst = 0.0);
 
                 pSrc += d;
                 ++pDst;

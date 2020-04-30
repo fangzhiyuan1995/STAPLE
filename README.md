@@ -1,5 +1,5 @@
 # STAPLE
-QT运行时主要两个错误：1、staple_tracker.cpp 1010行 1040行
+QT运行时主要两个错误：1、staple_tracker.cpp 1010行 1040行 +std::
 2、.pro 文件里添加QMAKE_CXXFLAGS += -msse3
 
 Some code from:
